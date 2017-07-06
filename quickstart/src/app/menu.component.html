@@ -1,0 +1,6 @@
+<div class="grid grid-pad">
+	<div *ngFor="let menuItem of menuItems"  class="col-1-4" >
+			<h2>{{menuItem.name}} {{menuItem.price | currency : 'USD' : true }}</h2>
+			<h3 *ngFor="let topping of menuItem.toppings">{{topping.name}} {{topping.price | currency: 'USD' : true}}</h3>
+	</div>
+</div>

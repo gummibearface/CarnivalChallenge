@@ -7,7 +7,7 @@ import { DashboardComponent }   from './dashboard.component';
 import { HeroDetailComponent }  from './hero-detail.component';
 import { HeroesComponent }      from './heroes.component';
 import { HeroService }          from './hero.service';
-import { HamburgerComponent }   from './hamburger.component';
+import { MenuComponent }   from './menu.component';
 
 import { AppRoutingModule }     from './app-routing.module';
 
@@ -22,7 +22,7 @@ import { AppRoutingModule }     from './app-routing.module';
     DashboardComponent,
     HeroDetailComponent,
     HeroesComponent,
-    HamburgerComponent
+    MenuComponent
   ],
   providers: [ HeroService ],
   bootstrap: [ AppComponent ]
