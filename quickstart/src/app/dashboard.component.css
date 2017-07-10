@@ -59,3 +59,31 @@ h4 {
     min-width: 60px;
   }
 }
+#myform {
+    text-align: center;
+    padding: 5px;
+    border: 1px dotted #ccc;
+    margin: 2%;
+}
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+input.qtyplus { width:25px; height:25px;}
+input.qtyminus { width:25px; height:25px;}
+.btn-pos{
+    padding:20px 31px;
+    font-size:20px;
+    border-radius:0px;
+    margin-right:1px;
+}
+.buttons{padding: 50px;}
+.btn-marginTop{margin-top:10px;}
+btn-summary{
+    margin-right:5px;
+}
+
+btn-marginTop{
+    margin-top:5px;
+}

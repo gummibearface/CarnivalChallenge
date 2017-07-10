@@ -1,6 +1,16 @@
 <div class="grid grid-pad">
 	<div *ngFor="let menuItem of menuItems"  class="col-1-4" >
 			<h2>{{menuItem.name}} {{menuItem.price | currency : 'USD' : true }}</h2>
-			<h3 *ngFor="let topping of menuItem.toppings">{{topping.name}} {{topping.price | currency: 'USD' : true}}</h3>
+			<div style="padding-bottom: 30px;" *ngFor="let topping of menuItem.toppings">{{topping.name}} {{topping.price | currency: 'USD' : true}}
+				<div class="col-md-2 col-md-push-2" >
+                     <button class="btn btn-success btn-xs" (click)="clicked($topping.name)">
+                         <span>+</span>
+                     </button>
+                     <button class="btn btn-warning btn-xs" >
+                         <span>-</span>
+                     </button>
+	           	</div>
+           	</div>
+			<button (click)="clicked($menuItem)">Add to Order</button>
 	</div>
 </div>
