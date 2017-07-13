@@ -11,7 +11,27 @@ import { MENU } from './mock-menu-items';
 export class MenuComponent {
     menuItems: MenuItems[] = MENU;
     order: OrderedMenuItems[];
-    clicked(event) {
-        alert(event);    
+
+    
+    public addItemToOrder = (menuItem) => {
+           alert(menuItem.name);
     }
+       
+    
+    public addToppingToOrder = (topping) => {
+            alert(topping.name + ' Quantity before: ' + topping.quantity);
+            topping.quantity += 1;
+            alert(topping.name + ' Quantity after: ' + topping.quantity);
+    }
+    
+    public removeToppingFromOrder = (topping) => {
+        alert(topping.name);   
+        if (topping.quantity > 0 ) {
+            topping.quantity -= 1;    
+        }
+        else {
+            alert('You can\' t remove toppings that aren\'t on the order');   
+        }
+    }
+    
 }

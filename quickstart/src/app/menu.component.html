@@ -3,14 +3,14 @@
 			<h2>{{menuItem.name}} {{menuItem.price | currency : 'USD' : true }}</h2>
 			<div style="padding-bottom: 30px;" *ngFor="let topping of menuItem.toppings">{{topping.name}} {{topping.price | currency: 'USD' : true}}
 				<div class="col-md-2 col-md-push-2" >
-                     <button class="btn btn-success btn-xs" (click)="clicked($topping.name)">
+                     <button class="btn btn-success btn-xs" (click)="addToppingToOrder(topping, menuItem)">
                          <span>+</span>
                      </button>
-                     <button class="btn btn-warning btn-xs" >
+                     <button class="btn btn-warning btn-xs" (click)="removeToppingFromOrder(topping, menuItem)">
                          <span>-</span>
                      </button>
 	           	</div>
            	</div>
-			<button (click)="clicked($menuItem)">Add to Order</button>
+			<button (click)="addItemToOrder(menuItem)">Add to Order</button>
 	</div>
 </div>
