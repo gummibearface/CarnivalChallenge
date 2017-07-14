@@ -3,13 +3,13 @@ import { BURGER_TOPPINGS, HOTDOG_TOPPINGS, PRETZEL_TOPPINGS } from './mock-toppi
     
 
 export const MENU: MenuItems[] = [
-{name: 'Jumbo Pretzel', toppings: PRETZEL_TOPPINGS, price: 2.50},
-{name: 'Tiny Pretzel', toppings: PRETZEL_TOPPINGS, price: 1.00},
-{name: 'Hamburger', toppings: BURGER_TOPPINGS, price: 2.00},
-{name: 'Hot Dog', toppings: HOTDOG_TOPPINGS, price: 2.00},
-{name: 'Nachos', toppings: null, price: 2.50},
-{name: 'Chips', toppings: null, price: .75},
-{name: 'Drink', toppings: null, price: 1.00},
-{name: 'Cotton Candy', toppings: null, price: 1.50},
-    
+new MenuItems('Jumbo Pretzel',PRETZEL_TOPPINGS,2.50),
+new MenuItems('Tiny Pretzel',PRETZEL_TOPPINGS,1.00),
+new MenuItems('Hamburger',BURGER_TOPPINGS,2.00),
+new MenuItems('Hot Dog',HOTDOG_TOPPINGS,2.00),
+new MenuItems('Nachos',null,2.50),
+new MenuItems('Chips',null,.75),
+new MenuItems('Drink',null,1.00),
+new MenuItems('Cotton Candy',null,1.50)
+   
 ];

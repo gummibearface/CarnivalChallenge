@@ -10,11 +10,16 @@ import { MENU } from './mock-menu-items';
     })
 export class MenuComponent {
     menuItems: MenuItems[] = MENU;
-    order: OrderedMenuItems[];
+    order: OrderedMenuItems[] = [];
+    items: string = '';
 
     
     public addItemToOrder = (menuItem) => {
-           alert(menuItem.name);
+        alert(menuItem.name);
+        let item: OrderedMenuItems = menuItem as OrderedMenuItems;
+        this.order.push(item);
+        this.items += (item.name + ', ');        
+        alert(this.items);
     }
        
     

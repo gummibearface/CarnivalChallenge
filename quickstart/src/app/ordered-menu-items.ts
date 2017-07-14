@@ -1,6 +1,7 @@
 import { MenuItems } from './menu-items';
 
 export class OrderedMenuItems extends MenuItems {
-    orderedQuantity: number;
+    orderedQuantity: number = 0 ;
+    
        
 }
