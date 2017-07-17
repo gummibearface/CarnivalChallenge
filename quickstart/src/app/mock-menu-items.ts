@@ -7,9 +7,9 @@ new MenuItems('Jumbo Pretzel',PRETZEL_TOPPINGS,2.50),
 new MenuItems('Tiny Pretzel',PRETZEL_TOPPINGS,1.00),
 new MenuItems('Hamburger',BURGER_TOPPINGS,2.00),
 new MenuItems('Hot Dog',HOTDOG_TOPPINGS,2.00),
-new MenuItems('Nachos',null,2.50),
-new MenuItems('Chips',null,.75),
-new MenuItems('Drink',null,1.00),
-new MenuItems('Cotton Candy',null,1.50)
+new MenuItems('Nachos',[],2.50),
+new MenuItems('Chips',[],.75),
+new MenuItems('Drink',[],1.00),
+new MenuItems('Cotton Candy',[],1.50)
    
 ];

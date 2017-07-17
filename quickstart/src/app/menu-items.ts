@@ -13,7 +13,7 @@ export class MenuItems {
     getTotalPrice() {
         let total:number = this.price;
         for (let topping of this.toppings){
-            total += topping.price;
+               total += topping.price * topping.quantity;
         }   
         return total;
     }
